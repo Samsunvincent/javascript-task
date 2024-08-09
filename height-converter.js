@@ -2,7 +2,7 @@ let submit = document.getElementById('submit').onclick = function(){
     let type = document.getElementById('type').value;
     let input = document.getElementById('input').value;
     let output = document.getElementById('output').value;
-    if (input === "centimeter" && output ==="meter"){
+    if (input === "centimeter" && output ==="meter"){  
         type = type/100;
         console.log(type)
        
