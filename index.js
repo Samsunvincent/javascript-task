@@ -19,11 +19,19 @@
         console.log(typeof(type))
         let typearr = type.split(`-`);
         console.log(typearr);
-        let age = '';
-        let agedisplay = document.getElementById('age-display')
-        age = year - typearr[0];
-        agedisplay.innerHTML = (age)
-        console.log('age :', age)
+        if(typearr == 0){
+            agedisplay.innerHTML = "null"
+        }
+        else{
+            let age = '';
+            let agedisplay = document.getElementById('age-display')
+            age = year - typearr[0];
+            agedisplay.innerHTML = (age)
+            console.log('age :', age)
+
+        }
+        
+     
 
 
 
