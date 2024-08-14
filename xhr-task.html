@@ -1,70 +1,259 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="./xhr.css">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Hello, world!</title>
-  </head>
-  <body>
-   <!-- Nav secttion -->
-   <div class="container">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="./xhr.css">
+
+  <title>Hello, world!</title>
+</head>
+
+<body>
+  <!-- Nav secttion -->
+  <div class="container">
     <nav class="navbar navbar-light bg-light">
       <div class="container-fluid ">
         <a class="navbar-brand" href="#">
-          <img src="/docs/5.0/assets/brand/bootstrap-logo.svg" alt="" width="30" height="24" class="d-inline-block align-text-top">
+          <img src="/docs/5.0/assets/brand/bootstrap-logo.svg" alt="" width="30" height="24"
+            class="d-inline-block align-text-top">
           Urban Aura
         </a>
-     <div class="d-flex gap-5">
-      <div class="fs-5 "><a href="#">Home</a></div>
-      <div class="fs-5"><a href="#">Fruits</a></div>
-      <div class="fs-5"><a href="#">Contact Us</a></div>
-      <div class="fs-5"><a href="#">Services</a></div>
-      <div class="fs-5"><a href="#"><img src="./xhr-img/icons8-search-30.png" alt=""></a></div>
-     </div>
+        <div class="d-flex gap-5">
+          <div class="fs-5 "><a href="#">Home</a></div>
+          <div class="fs-5"><a href="#">Fruits</a></div>
+          <div class="fs-5"><a href="#">Contact Us</a></div>
+          <div class="fs-5"><a href="#">Services</a></div>
+          <div class="fs-5"><a href="#"><img src="./xhr-img/icons8-search-30.png" alt=""></a></div>
+        </div>
       </div>
     </nav>
-    <!-- carousel section -->
-    <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
-      <div class="carousel-inner">
-        <div class="carousel-item active" data-bs-interval="10000">
-          <img src="..." class="d-block w-100" alt="...">
-        </div>
-        <div class="carousel-item" data-bs-interval="2000">
-          <img src="..." class="d-block w-100" alt="...">
-        </div>
-        <div class="carousel-item">
-          <img src="..." class="d-block w-100" alt="...">
+  </div>
+  <!-- carousel section -->
+
+
+  <div id="carouselExampleInterval" class="carousel slide w-100 centering" data-bs-ride="carousel">
+    <div class="carousel-inner ">
+      <div class="carousel-item active  " data-bs-interval="10000">
+        <div class="d-flex justify-content-between align-items-center">
+          <div class="w-50">
+            <div class="title fs-2 fw-bold "></div>
+            <div class="description fs-4 fw-normal"></div>
+          </div>
+          <img src="your-image1.jpg" class=" image" alt="Image 1 description">
         </div>
       </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
-      <div id="heading"></div>
-      <div id="image"></div>
+      <div class="carousel-item   " data-bs-interval="10000">
+        <div class="d-flex justify-content-between align-items-center">
+          <div class="w-50">
+            <div class="title fs-2 fw-bold "></div>
+            <div class="description fs-4 fw-normal"></div>
+          </div>
+          <img src="your-image1.jpg" class=" image" alt="Image 1 description">
+        </div>
+      </div>
+      <div class="carousel-item" data-bs-interval="10000">
+        <div class="d-flex justify-content-between align-items-center">
+          <div class="w-50">
+            <div class="title fs-2 fw-bold "></div>
+            <div class="description fs-4 fw-normal"></div>
+          </div>
+          <img src="your-image1.jpg" class=" image" alt="Image 1 description">
+        </div>
+      </div>
+      <div class="carousel-item" data-bs-interval="10000">
+        <div class="d-flex justify-content-between align-items-center">
+          <div class="w-50">
+            <div class="title fs-2 fw-bold "></div>
+            <div class="description fs-4 fw-normal"></div>
+          </div>
+          <img src="your-image1.jpg" class=" image" alt="Image 1 description">
+        </div>
+      </div>
     </div>
-   </div>
-    <script src="./xhr-task.js"></script>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon bg-dark" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+      <span class="carousel-control-next-icon bg-dark" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
 
-    <!-- Optional JavaScript; choose one of the two! -->
+  <!-- box section -->
 
-    <!-- Option 1: Bootstrap Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  <div class="container">
+    <div class="d-flex gap-3 ">
+    
+      <div class="border border-2 rounded bg-body  text-center pb-3 box">
+        <img src="your-image1.jpg" class="  image pt-5 jewels" alt="Image 1 description">
+        <div class="title fs-5 fw-bold pt-5"></div>
+        <div class="category"></div>
+        <div class="description  fs-6 p-3"></div>
+        <div class="price fs-5"></div> 
+        <span class="p-3"><button class="p-2 border-0 add-to-cart">Add to Cart</button></span>
+        <div class="rating"></div>
+      </div>
+      <div class="border border-2 rounded bg-body  text-center box">
+        <img src="your-image1.jpg" class="  image pt-5 jewels" alt="Image 1 description">
+        <div class="title fs-5 fw-bold pt-5"></div>
+        <div class="category"></div>
+        <div class="description description1 fs-6 p-3"></div>
+        <div class="price fs-5"></div>
+        <span class="p-3"><button class="p-2 border-0 add-to-cart">Add to Cart</button></span>xhr
+        <div class="rating"></div>
+      </div>
+      <div class="border border-2 rounded bg-body  text-center box">
+        <img src="your-image1.jpg" class="  image pt-5 jewels" alt="Image 1 description">
+        <div class="title fs-5 fw-bold pt-5"></div>
+        <div class="category"></div>
+        <div class="description description1 fs-6 p-3"></div>
+        <div class="price fs-5"></div>
+        <span class="p-3"><button class="p-2 border-0 add-to-cart">Add to Cart</button></span>
+        <div class="rating"></div>
+      </div>
+      <div class="border border-2 rounded bg-body  text-center box">
+        <img src="your-image1.jpg" class="  image pt-5 jewels" alt="Image 1 description">
+        <div class="title fs-5 fw-bold pt-5"></div>
+        <div class="category"></div>
+        <div class="description description1 fs-6 p-3"></div>
+        <div class="price fs-5"></div>
+        <div class="rating"></div>
+      </div>
+  
+    </div>
+    <div class="d-flex gap-3 pt-5">
+    
+      <div class="border border-2 rounded bg-body  text-center  box">
+        <img src="your-image1.jpg" class="  image pt-5 electronics" alt="Image 1 description">
+        <div class="title fs-5 fw-bold pt-5"></div>
+        <div class="category"></div>
+        <div class="description  fs-6 p-3"></div>
+        <div class="price fs-5"></div> 
+        <div class="rating"></div>
+      </div>
+      <div class="border border-2 rounded bg-body  text-center box">
+        <img src="your-image1.jpg" class="  image pt-5 electronics" alt="Image 1 description">
+        <div class="title fs-5 fw-bold pt-5"></div>
+        <div class="category"></div>
+        <div class="description description1 fs-6 p-3"></div>
+        <div class="price fs-5"></div>
+        <div class="rating"></div>
+      </div>
+      <div class="border border-2 rounded bg-body  text-center box">
+        <img src="your-image1.jpg" class="  image pt-5 electronics" alt="Image 1 description">
+        <div class="title fs-5 fw-bold pt-5"></div>
+        <div class="category"></div>
+        <div class="description description1 fs-6 p-3"></div>
+        <div class="price fs-5"></div>
+        <div class="rating"></div>
+      </div>
+      <div class="border border-2 rounded bg-body  text-center box">
+        <img src="your-image1.jpg" class="  image pt-5 jewels" alt="Image 1 description">
+        <div class="title fs-5 fw-bold pt-5"></div>
+        <div class="category"></div>
+        <div class="description description1 fs-6 p-3"></div>
+        <div class="price fs-5"></div>
+        <div class="rating"></div>
+      </div>
+  
+    </div>
+    <div class="d-flex gap-3 pt-5">
+    
+      <div class="border border-2 rounded bg-body  text-center  box">
+        <img src="your-image1.jpg" class="  image pt-5 electronics" alt="Image 1 description">
+        <div class="title fs-5 fw-bold pt-5"></div>
+        <div class="category"></div>
+        <div class="description  fs-6 p-3"></div>
+        <div class="price fs-5"><span><button>Ad to Cart</button></span></div> 
+        <div class="rating"></div>
+      </div>
+      <div class="border border-2 rounded bg-body  text-center box">
+        <img src="your-image1.jpg" class="  image pt-5 electronics" alt="Image 1 description">
+        <div class="title fs-5 fw-bold pt-5"></div>
+        <div class="category"></div>
+        <div class="description description1 fs-6 p-3"></div>
+        <div class="price fs-5"></div>
+        <div class="rating"></div>
+      </div>
+      <div class="border border-2 rounded bg-body  text-center  box">
+        <img src="your-image1.jpg" class="  image pt-5 electronics" alt="Image 1 description">
+        <div class="title fs-5 fw-bold pt-5"></div>
+        <div class="category"></div>
+        <div class="description  fs-6 p-3"></div>
+        <div class="price fs-5"></div> 
+        <div class="rating"></div>
+      </div>
+      <div class="border border-2 rounded bg-body  text-center box">
+        <img src="your-image1.jpg" class="  image pt-5 jewels" alt="Image 1 description">
+        <div class="title fs-5 fw-bold pt-5"></div>
+        <div class="category"></div>
+        <div class="description description1 fs-6 p-3"></div>
+        <div class="price fs-5"></div>
+        <div class="rating"></div>
+      </div>
+  
+    </div>
+    <div class="d-flex gap-3 pt-5">
+    
+    
+      <div class="border border-2 rounded bg-body  text-center box">
+        <img src="your-image1.jpg" class="  image pt-5 electronics" alt="Image 1 description">
+        <div class="title fs-5 fw-bold pt-5"></div>
+        <div class="category"></div>
+        <div class="description description1 fs-6 p-3"></div>
+        <div class="price fs-5"></div>
+        <div class="rating"></div>
+      </div>
+      <div class="border border-2 rounded bg-body  text-center box">
+        <img src="your-image1.jpg" class="  image pt-5 electronics" alt="Image 1 description">
+        <div class="title fs-5 fw-bold pt-5"></div>
+        <div class="category"></div>
+        <div class="description description1 fs-6 p-3"></div>
+        <div class="price fs-5"></div>
+        <div class="rating"></div>
+      </div>
+      <div class="border border-2 rounded bg-body  text-center box">
+        <img src="your-image1.jpg" class="  image pt-5 electronics" alt="Image 1 description">
+        <div class="title fs-5 fw-bold pt-5"></div>
+        <div class="category"></div>
+        <div class="description description1 fs-6 p-3"></div>
+        <div class="price fs-5"></div>
+        <div class="rating"></div>
+      </div>
+      <div class="border border-2 rounded bg-body  text-center box">
+        <img src="your-image1.jpg" class="  image pt-5 electronics" alt="Image 1 description">
+        <div class="title fs-5 fw-bold pt-5"></div>
+        <div class="category"></div>
+        <div class="description description1 fs-6 p-3"></div>
+        <div class="price fs-5"></div>
+        <div class="rating"></div>
+      </div>
+  
+  
+    </div>
+  </div>
 
-    <!-- Option 2: Separate Popper and Bootstrap JS -->
-    <!--
+
+
+  <!-- Optional JavaScript; choose one of the two! -->
+
+  <!-- Option 1: Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+  <script src="./xhr-task.js"></script>
+  <!-- Option 2: Separate Popper and Bootstrap JS -->
+  <!--
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
     -->
-  </body>
+</body>
+
 </html>
